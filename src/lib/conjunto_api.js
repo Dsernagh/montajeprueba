@@ -1,4 +1,4 @@
-const API_BASE = 'http://192.168.0.150:10001/api'; 
+const API_BASE = 'https://jjxvgpxweolzeqmtlkmx.supabase.co'; 
 
 export async function fetchConjuntos() {
   const res = await fetch(`${API_BASE}/conjuntos`, {
