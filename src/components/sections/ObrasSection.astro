@@ -244,7 +244,8 @@ const totalObras = obras.length;
       const searchValue = searchInput.value.toLowerCase();
 
       tableRows.forEach(row => {
-        const estado = row.querySelector('.status-badge').textContent.toLowerCase();
+        const estadoElement = row.querySelector('.status-badge');
+        const estado = estadoElement ? estadoElement.textContent.toLowerCase() : '';
         const nombre = row.cells[0].textContent.toLowerCase();
         const responsable = row.cells[5].textContent.toLowerCase();
 
