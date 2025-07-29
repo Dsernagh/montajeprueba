@@ -245,7 +245,7 @@ const totalObras = obras.length;
 
       tableRows.forEach(row => {
         const estadoElement = row.querySelector('.status-badge');
-        const estado = estadoElement && typeof estadoElement.textContent === 'string' ? estadoElement.textContent.toLowerCase() : '';
+        const estado = estadoElement?.textContent?.toLowerCase() || '';
         const nombre = row.cells[0].textContent.toLowerCase();
         const responsable = row.cells[5].textContent.toLowerCase();
 
